@@ -1,0 +1,618 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<SchemaFile xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<dataCompositionSchema xmlns="http://v8.1c.ru/8.1/data-composition-system/schema">
+		<dataSource>
+			<name>ИсточникДанных1</name>
+			<dataSourceType>Local</dataSourceType>
+		</dataSource>
+		<dataSet xsi:type="DataSetQuery">
+			<name>НаборДанных1</name>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>ВалютаПланированияМаркетинговойКампании</dataPath>
+				<field>ВалютаПланированияМаркетинговойКампании</field>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>ДатаМК</dataPath>
+				<field>ДатаМК</field>
+				<title xmlns:d5p1="http://v8.1c.ru/8.1/data/core" xsi:type="d5p1:LocalStringType">
+					<d5p1:item>
+						<d5p1:lang>ru</d5p1:lang>
+						<d5p1:content>Дата регистрации первичного интереса</d5p1:content>
+					</d5p1:item>
+				</title>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>ДокументПродажи</dataPath>
+				<field>ДокументПродажи</field>
+				<role>
+					<periodNumber xmlns="http://v8.1c.ru/8.1/data-composition-system/common">1</periodNumber>
+					<periodType xmlns="http://v8.1c.ru/8.1/data-composition-system/common">Main</periodType>
+				</role>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>ИсточникПервичногоИнтереса</dataPath>
+				<field>ИсточникПервичногоИнтереса</field>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>КаналПервичногоИнтереса</dataPath>
+				<field>КаналПервичногоИнтереса</field>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>Клиент</dataPath>
+				<field>Клиент</field>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>КоличествоКлиентовСовершившихПокупку</dataPath>
+				<field>КоличествоКлиентовСовершившихПокупку</field>
+				<role>
+					<dimension xmlns="http://v8.1c.ru/8.1/data-composition-system/common">true</dimension>
+				</role>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>КоличествоПервичныхИнтересов</dataPath>
+				<field>КоличествоПервичныхИнтересов</field>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>КоличествоПривлеченныхКлиентов</dataPath>
+				<field>КоличествоПривлеченныхКлиентов</field>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>МаркетинговоеМероприятиеПлановаяСуммаЗатрат</dataPath>
+				<field>МаркетинговоеМероприятиеПлановаяСуммаЗатрат</field>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>МаркетинговоеМероприятиеПлановаяСуммаПродаж</dataPath>
+				<field>МаркетинговоеМероприятиеПлановаяСуммаПродаж</field>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>ПлановаяСуммаЗатрат</dataPath>
+				<field>ПлановаяСуммаЗатрат</field>
+				<title xmlns:d5p1="http://v8.1c.ru/8.1/data/core" xsi:type="d5p1:LocalStringType">
+					<d5p1:item>
+						<d5p1:lang>ru</d5p1:lang>
+						<d5p1:content>Плановая сумма затрат (%ВалютаУчета%)</d5p1:content>
+					</d5p1:item>
+				</title>
+				<appearance>
+					<item xmlns="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xsi:type="dcsset:SettingsParameterValue">
+						<parameter>Формат</parameter>
+						<value xsi:type="xs:string">ЧДЦ=2</value>
+					</item>
+				</appearance>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>ПлановаяСуммаПродаж</dataPath>
+				<field>ПлановаяСуммаПродаж</field>
+				<title xmlns:d5p1="http://v8.1c.ru/8.1/data/core" xsi:type="d5p1:LocalStringType">
+					<d5p1:item>
+						<d5p1:lang>ru</d5p1:lang>
+						<d5p1:content>Плановая сумма продаж (%ВалютаУчета%)</d5p1:content>
+					</d5p1:item>
+				</title>
+				<appearance>
+					<item xmlns="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xsi:type="dcsset:SettingsParameterValue">
+						<parameter>Формат</parameter>
+						<value xsi:type="xs:string">ЧДЦ=2</value>
+					</item>
+				</appearance>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>ПроцентСовершившихПокупку</dataPath>
+				<field>ПроцентСовершившихПокупку</field>
+				<appearance>
+					<item xmlns="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xsi:type="dcsset:SettingsParameterValue">
+						<parameter>Формат</parameter>
+						<value xsi:type="xs:string">ЧДЦ=2</value>
+					</item>
+				</appearance>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>РегистраторИИ</dataPath>
+				<field>РегистраторИИ</field>
+				<title xmlns:d5p1="http://v8.1c.ru/8.1/data/core" xsi:type="d5p1:LocalStringType">
+					<d5p1:item>
+						<d5p1:lang>ru</d5p1:lang>
+						<d5p1:content>Регистратор первичного интереса</d5p1:content>
+					</d5p1:item>
+				</title>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>СтоимостьПривлеченияОдногоКлиента</dataPath>
+				<field>СтоимостьПривлеченияОдногоКлиента</field>
+				<title xmlns:d5p1="http://v8.1c.ru/8.1/data/core" xsi:type="d5p1:LocalStringType">
+					<d5p1:item>
+						<d5p1:lang>ru</d5p1:lang>
+						<d5p1:content>Стоимость привлечения одного клиента (%ВалютаУчета%)</d5p1:content>
+					</d5p1:item>
+				</title>
+				<appearance>
+					<item xmlns="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xsi:type="dcsset:SettingsParameterValue">
+						<parameter>Формат</parameter>
+						<value xsi:type="xs:string">ЧДЦ=2</value>
+					</item>
+				</appearance>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>СтоимостьПривлеченияОдногоКлиентаСовершившегоПокупку</dataPath>
+				<field>СтоимостьПривлеченияОдногоКлиентаСовершившегоПокупку</field>
+				<title xmlns:d5p1="http://v8.1c.ru/8.1/data/core" xsi:type="d5p1:LocalStringType">
+					<d5p1:item>
+						<d5p1:lang>ru</d5p1:lang>
+						<d5p1:content>Стоимость привлечения одного клиента совершившего покупку (%ВалютаУчета%)</d5p1:content>
+					</d5p1:item>
+				</title>
+				<appearance>
+					<item xmlns="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xsi:type="dcsset:SettingsParameterValue">
+						<parameter>Формат</parameter>
+						<value xsi:type="xs:string">ЧДЦ=2</value>
+					</item>
+				</appearance>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>СуммаВыручки</dataPath>
+				<field>СуммаВыручки</field>
+				<title xmlns:d5p1="http://v8.1c.ru/8.1/data/core" xsi:type="d5p1:LocalStringType">
+					<d5p1:item>
+						<d5p1:lang>ru</d5p1:lang>
+						<d5p1:content>Сумма выручки (%ВалютаУчета%)</d5p1:content>
+					</d5p1:item>
+				</title>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>ЭтоКаналРекламногоВзаимодействия</dataPath>
+				<field>ЭтоКаналРекламногоВзаимодействия</field>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>ЭтоМаркетинговыеМероприятия</dataPath>
+				<field>ЭтоМаркетинговыеМероприятия</field>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>Номенклатура</dataPath>
+				<field>Номенклатура</field>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>Контрагент</dataPath>
+				<field>Контрагент</field>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>ХарактеристикаНоменклатуры</dataPath>
+				<field>ХарактеристикаНоменклатуры</field>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>ДоговорКонтрагента</dataPath>
+				<field>ДоговорКонтрагента</field>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>Организация</dataPath>
+				<field>Организация</field>
+			</field>
+			<dataSource>ИсточникДанных1</dataSource>
+			<query>ВЫБРАТЬ
+	КурсыВалютСрезПоследних.Курс,
+	КурсыВалютСрезПоследних.Кратность
+ПОМЕСТИТЬ ВалютаУпрКурсКратность
+ИЗ
+	РегистрСведений.КурсыВалют.СрезПоследних(, Валюта = &amp;ВалютаУпр) КАК КурсыВалютСрезПоследних
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	Продажи.Регистратор.Дата КАК ДатаПродажи,
+	Продажи.Регистратор КАК ДокументПродажи,
+	ЕСТЬNULL(Продажи.ДокументПродажи, ЗНАЧЕНИЕ(Документ.CRM_СчетНаОплатуПокупателю.ПустаяСсылка)) КАК Сделка,
+	//АналитикаПоПартнерам.Организация КАК Организация,
+	Продажи.Контрагент КАК Партнер,
+	//Продажи.Подразделение,
+	Продажи.КоличествоОборот КАК Количество,
+	Продажи.СтоимостьОборот КАК СуммаВыручки
+	//Продажи.СуммаВыручкиРеглОборот КАК СуммаВыручкиРегл
+ПОМЕСТИТЬ Продажи
+ИЗ
+	РегистрНакопления.CRM_Продажи.Обороты({(&amp;НачалоПериода)}, {(&amp;ОкончаниеПериода)}, Авто, ) КАК Продажи
+		//{ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.АналитикаУчетаПоПартнерам КАК АналитикаПоПартнерам
+		//ПО Продажи.АналитикаУчетаПоПартнерам = АналитикаПоПартнерам.КлючАналитики}
+ГДЕ
+	(Продажи.Регистратор ССЫЛКА Документ.CRM_СчетНаОплатуПокупателю)
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	ИсточникиПервичногоИнтереса.Период КАК ДатаМК,
+	ЕСТЬNULL(ИсточникиПервичногоИнтереса.ИсточникПервичногоИнтереса.CRM_ДатаАктуальности, ДАТАВРЕМЯ(1, 1, 1)) КАК ДатаАктуальностиМК,
+	ИсточникиПервичногоИнтереса.Партнер КАК ПривлеченныйПартнер,
+	ИсточникиПервичногоИнтереса.Сделка КАК РегистраторИИ
+ПОМЕСТИТЬ ИсточникиИнформации
+ИЗ
+	РегистрСведений.ИсточникиПервичногоИнтереса КАК ИсточникиПервичногоИнтереса
+{ГДЕ
+	(ИсточникиПервичногоИнтереса.Период МЕЖДУ &amp;НачалоПериода И &amp;ОкончаниеПериода
+			ИЛИ ИсточникиПервичногоИнтереса.ИсточникПервичногоИнтереса.CRM_ДатаАктуальности МЕЖДУ &amp;НачалоПериода И &amp;ОкончаниеПериода)}
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	МАКСИМУМ(ИсточникиИнформации.ДатаМК) КАК ДатаМК,
+	ИсточникиИнформации.ПривлеченныйПартнер КАК Партнер,
+	Продажи.Партнер КАК КупившийПартнер,
+	Продажи.ДатаПродажи,
+	Продажи.ДокументПродажи,
+	Продажи.Сделка,
+	Продажи.Количество,
+	Продажи.СуммаВыручки,
+	ИсточникиИнформации.РегистраторИИ
+ПОМЕСТИТЬ ДатаМКПродажи
+ИЗ
+	ИсточникиИнформации КАК ИсточникиИнформации
+		ЛЕВОЕ СОЕДИНЕНИЕ Продажи КАК Продажи
+		ПО ИсточникиИнформации.ПривлеченныйПартнер = Продажи.Партнер
+			И (Продажи.ДатаПродажи &gt;= ИсточникиИнформации.ДатаМК)
+			И (Продажи.ДатаПродажи &lt;= ИсточникиИнформации.ДатаАктуальностиМК
+				ИЛИ ИсточникиИнформации.ДатаАктуальностиМК = ДАТАВРЕМЯ(1, 1, 1))
+
+СГРУППИРОВАТЬ ПО
+	ИсточникиИнформации.ПривлеченныйПартнер,
+	Продажи.Партнер,
+	Продажи.ДатаПродажи,
+	Продажи.ДокументПродажи,
+	Продажи.Сделка,
+	Продажи.Количество,
+	Продажи.СуммаВыручки,
+	ИсточникиИнформации.РегистраторИИ
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	ДатаМКПродажи.Партнер КАК КоличествоПривлеченныхКлиентов,
+	ДатаМКПродажи.Партнер КАК Клиент,
+	ДатаМКПродажи.ДокументПродажи,
+	ИсточникиПервичногоИнтереса.КаналПервичногоИнтереса,
+	ИсточникиПервичногоИнтереса.ИсточникПервичногоИнтереса,
+	ВЫРАЗИТЬ(ИсточникиПервичногоИнтереса.ИсточникПервичногоИнтереса КАК Справочник.МаркетинговыеМероприятия).CRM_ПлановаяСуммаПродаж КАК МаркетинговоеМероприятиеПлановаяСуммаПродаж,
+	ВЫРАЗИТЬ(ИсточникиПервичногоИнтереса.ИсточникПервичногоИнтереса КАК Справочник.МаркетинговыеМероприятия).CRM_ПлановаяСуммаЗатрат КАК МаркетинговоеМероприятиеПлановаяСуммаЗатрат,
+	ВЫБОР
+		КОГДА ИсточникиПервичногоИнтереса.КаналПервичногоИнтереса ССЫЛКА ПланВидовХарактеристик.КаналыРекламныхВоздействий
+			ТОГДА ИСТИНА
+		ИНАЧЕ ЛОЖЬ
+	КОНЕЦ КАК ЭтоКаналРекламногоВзаимодействия,
+	ВЫБОР
+		КОГДА ИсточникиПервичногоИнтереса.ИсточникПервичногоИнтереса ССЫЛКА Справочник.МаркетинговыеМероприятия
+			ТОГДА ИСТИНА
+		ИНАЧЕ ЛОЖЬ
+	КОНЕЦ КАК ЭтоМаркетинговыеМероприятия,
+	ДатаМКПродажи.СуммаВыручки КАК СуммаВыручки,
+	ДатаМКПродажи.ДатаМК,
+	ДатаМКПродажи.РегистраторИИ,
+	ИсточникиПервичногоИнтереса.ИсточникПервичногоИнтереса КАК КоличествоПервичныхИнтересов,
+	ДатаМКПродажи.КупившийПартнер КАК КоличествоКлиентовСовершившихПокупку,
+	0 КАК ПроцентСовершившихПокупку,
+	ВЫБОР
+		КОГДА ИсточникиПервичногоИнтереса.ИсточникПервичногоИнтереса ССЫЛКА Справочник.МаркетинговыеМероприятия
+			ТОГДА ВЫБОР
+					КОГДА ИсточникиПервичногоИнтереса.ИсточникПервичногоИнтереса.CRM_Валюта &lt;&gt; &amp;ВалютаУпр
+							И ИсточникиПервичногоИнтереса.ИсточникПервичногоИнтереса.CRM_Валюта &lt;&gt; ЗНАЧЕНИЕ(Справочник.Валюты.ПустаяСсылка)
+						ТОГДА ИсточникиПервичногоИнтереса.ИсточникПервичногоИнтереса.CRM_ПлановаяСуммаЗатрат / КурсыВалютМК.Курс * КурсыВалютМК.Кратность * ВалютаУпрКурсКратность.Курс / ВалютаУпрКурсКратность.Кратность
+					ИНАЧЕ ИсточникиПервичногоИнтереса.ИсточникПервичногоИнтереса.CRM_ПлановаяСуммаЗатрат
+				КОНЕЦ
+		ИНАЧЕ 0
+	КОНЕЦ КАК ПлановаяСуммаЗатрат,
+	ВЫБОР
+		КОГДА ИсточникиПервичногоИнтереса.ИсточникПервичногоИнтереса ССЫЛКА Справочник.МаркетинговыеМероприятия
+			ТОГДА ВЫБОР
+					КОГДА ИсточникиПервичногоИнтереса.ИсточникПервичногоИнтереса.CRM_Валюта &lt;&gt; &amp;ВалютаУпр
+							И ИсточникиПервичногоИнтереса.ИсточникПервичногоИнтереса.CRM_Валюта &lt;&gt; ЗНАЧЕНИЕ(Справочник.Валюты.ПустаяСсылка)
+						ТОГДА ИсточникиПервичногоИнтереса.ИсточникПервичногоИнтереса.CRM_ПлановаяСуммаПродаж / КурсыВалютМК.Курс * КурсыВалютМК.Кратность * ВалютаУпрКурсКратность.Курс / ВалютаУпрКурсКратность.Кратность
+					ИНАЧЕ ИсточникиПервичногоИнтереса.ИсточникПервичногоИнтереса.CRM_ПлановаяСуммаПродаж
+				КОНЕЦ
+		ИНАЧЕ 0
+	КОНЕЦ КАК ПлановаяСуммаПродаж,
+	0 КАК СтоимостьПривлеченияОдногоКлиента,
+	0 КАК СтоимостьПривлеченияОдногоКлиентаСовершившегоПокупку,
+	ВЫБОР
+		КОГДА ИсточникиПервичногоИнтереса.ИсточникПервичногоИнтереса ССЫЛКА Справочник.МаркетинговыеМероприятия
+			ТОГДА ИсточникиПервичногоИнтереса.ИсточникПервичногоИнтереса.CRM_Валюта
+		ИНАЧЕ ЗНАЧЕНИЕ(Справочник.Валюты.ПустаяСсылка)
+	КОНЕЦ КАК ВалютаПланированияМаркетинговойКампании
+ИЗ
+	ДатаМКПродажи КАК ДатаМКПродажи
+		ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.ИсточникиПервичногоИнтереса КАК ИсточникиПервичногоИнтереса
+			ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.КурсыВалют.СрезПоследних КАК КурсыВалютМК
+			ПО (ИсточникиПервичногоИнтереса.ИсточникПервичногоИнтереса ССЫЛКА Справочник.МаркетинговыеМероприятия)
+				И ИсточникиПервичногоИнтереса.ИсточникПервичногоИнтереса.CRM_Валюта = КурсыВалютМК.Валюта
+		ПО ДатаМКПродажи.ДатаМК = ИсточникиПервичногоИнтереса.Период
+			И ДатаМКПродажи.Партнер = ИсточникиПервичногоИнтереса.Партнер,
+	ВалютаУпрКурсКратность КАК ВалютаУпрКурсКратность</query>
+		</dataSet>
+		<totalField>
+			<dataPath>КоличествоКлиентовСовершившихПокупку</dataPath>
+			<expression>Количество( Различные КоличествоКлиентовСовершившихПокупку)</expression>
+		</totalField>
+		<totalField>
+			<dataPath>ПроцентСовершившихПокупку</dataPath>
+			<expression>ВЫБОР
+ КОГДА Количество(Различные КоличествоПривлеченныхКлиентов) = 0
+ ТОГДА 0
+ ИНАЧЕ Количество(Различные КоличествоКлиентовСовершившихПокупку)/Количество(Различные КоличествоПривлеченныхКлиентов)*100
+КОНЕЦ</expression>
+		</totalField>
+		<totalField>
+			<dataPath>ПлановаяСуммаЗатрат</dataPath>
+			<expression>ПлановаяСуммаЗатрат</expression>
+		</totalField>
+		<totalField>
+			<dataPath>ПлановаяСуммаПродаж</dataPath>
+			<expression>ПлановаяСуммаПродаж</expression>
+		</totalField>
+		<totalField>
+			<dataPath>СтоимостьПривлеченияОдногоКлиента</dataPath>
+			<expression>ВЫБОР
+ КОГДА Количество(Различные КоличествоПривлеченныхКлиентов) = 0
+ ТОГДА 0
+ ИНАЧЕ ПлановаяСуммаЗатрат/Количество(Различные КоличествоПривлеченныхКлиентов)
+КОНЕЦ</expression>
+		</totalField>
+		<totalField>
+			<dataPath>СтоимостьПривлеченияОдногоКлиентаСовершившегоПокупку</dataPath>
+			<expression>ВЫБОР
+ КОГДА Количество(Различные КоличествоКлиентовСовершившихПокупку) = 0
+ ТОГДА 0
+ ИНАЧЕ Сумма(ПлановаяСуммаЗатрат)/Количество(Различные КоличествоКлиентовСовершившихПокупку)
+КОНЕЦ</expression>
+		</totalField>
+		<totalField>
+			<dataPath>СуммаВыручки</dataPath>
+			<expression>Сумма(СуммаВыручки)</expression>
+		</totalField>
+		<totalField>
+			<dataPath>КоличествоПервичныхИнтересов</dataPath>
+			<expression>Количество(Различные КоличествоПервичныхИнтересов)</expression>
+		</totalField>
+		<totalField>
+			<dataPath>КоличествоПривлеченныхКлиентов</dataPath>
+			<expression>Количество(Различные КоличествоПривлеченныхКлиентов)</expression>
+		</totalField>
+		<parameter>
+			<name>НачалоПериода</name>
+			<title xmlns:d4p1="http://v8.1c.ru/8.1/data/core" xsi:type="d4p1:LocalStringType">
+				<d4p1:item>
+					<d4p1:lang>ru</d4p1:lang>
+					<d4p1:content>Начало периода</d4p1:content>
+				</d4p1:item>
+			</title>
+			<valueType>
+				<Type xmlns="http://v8.1c.ru/8.1/data/core">xs:dateTime</Type>
+				<DateQualifiers xmlns="http://v8.1c.ru/8.1/data/core">
+					<DateFractions>DateTime</DateFractions>
+				</DateQualifiers>
+			</valueType>
+			<value xsi:type="xs:dateTime">0001-01-01T00:00:00</value>
+			<useRestriction>true</useRestriction>
+			<expression>НачалоПериода(&amp;ПериодОтчета.ДатаНачала,"День")</expression>
+			<availableAsField>false</availableAsField>
+		</parameter>
+		<parameter>
+			<name>ОкончаниеПериода</name>
+			<title xmlns:d4p1="http://v8.1c.ru/8.1/data/core" xsi:type="d4p1:LocalStringType">
+				<d4p1:item>
+					<d4p1:lang>ru</d4p1:lang>
+					<d4p1:content>Окончание периода</d4p1:content>
+				</d4p1:item>
+			</title>
+			<valueType>
+				<Type xmlns="http://v8.1c.ru/8.1/data/core">xs:dateTime</Type>
+				<DateQualifiers xmlns="http://v8.1c.ru/8.1/data/core">
+					<DateFractions>DateTime</DateFractions>
+				</DateQualifiers>
+			</valueType>
+			<value xsi:type="xs:dateTime">2100-12-31T00:00:00</value>
+			<useRestriction>true</useRestriction>
+			<expression>КонецПериода(&amp;ПериодОтчета.ДатаОкончания,"День")</expression>
+			<availableAsField>false</availableAsField>
+		</parameter>
+		<parameter>
+			<name>Период</name>
+			<title xmlns:d4p1="http://v8.1c.ru/8.1/data/core" xsi:type="d4p1:LocalStringType">
+				<d4p1:item>
+					<d4p1:lang>ru</d4p1:lang>
+					<d4p1:content>Период</d4p1:content>
+				</d4p1:item>
+			</title>
+			<valueType>
+				<Type xmlns="http://v8.1c.ru/8.1/data/core">StandardPeriod</Type>
+			</valueType>
+			<value xmlns:d4p1="http://v8.1c.ru/8.1/data/core" xsi:type="d4p1:StandardPeriod">
+				<d4p1:variant xsi:type="d4p1:StandardPeriodVariant">Custom</d4p1:variant>
+				<d4p1:startDate>0001-01-01T00:00:00</d4p1:startDate>
+				<d4p1:endDate>0001-01-01T00:00:00</d4p1:endDate>
+			</value>
+			<useRestriction>false</useRestriction>
+		</parameter>
+		<parameter>
+			<name>ВалютаУпр</name>
+			<title xmlns:d4p1="http://v8.1c.ru/8.1/data/core" xsi:type="d4p1:LocalStringType">
+				<d4p1:item>
+					<d4p1:lang>ru</d4p1:lang>
+					<d4p1:content>Валюта упр</d4p1:content>
+				</d4p1:item>
+			</title>
+			<valueType>
+				<Type xmlns="http://v8.1c.ru/8.1/data/core" xmlns:d5p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d5p1:CatalogRef.Валюты</Type>
+			</valueType>
+			<value xsi:nil="true"/>
+			<useRestriction>true</useRestriction>
+			<expression>Константы.ВалютаУправленческогоУчета.Получить()</expression>
+			<availableAsField>false</availableAsField>
+		</parameter>
+		<parameter>
+			<name>ПериодОтчета</name>
+			<title xmlns:d4p1="http://v8.1c.ru/8.1/data/core" xsi:type="d4p1:LocalStringType">
+				<d4p1:item>
+					<d4p1:lang>ru</d4p1:lang>
+					<d4p1:content>Период отчета</d4p1:content>
+				</d4p1:item>
+			</title>
+			<valueType>
+				<Type xmlns="http://v8.1c.ru/8.1/data/core">StandardPeriod</Type>
+			</valueType>
+			<value xmlns:d4p1="http://v8.1c.ru/8.1/data/core" xsi:type="d4p1:StandardPeriod">
+				<d4p1:variant xsi:type="d4p1:StandardPeriodVariant">Custom</d4p1:variant>
+				<d4p1:startDate>0001-01-01T00:00:00</d4p1:startDate>
+				<d4p1:endDate>0001-01-01T00:00:00</d4p1:endDate>
+			</value>
+			<useRestriction>false</useRestriction>
+		</parameter>
+		<settingsVariant>
+			<name xmlns="http://v8.1c.ru/8.1/data-composition-system/settings">АнализИсточниковПервичногоИнтереса</name>
+			<presentation xmlns="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:d4p1="http://v8.1c.ru/8.1/data/core" xsi:type="d4p1:LocalStringType">
+				<d4p1:item>
+					<d4p1:lang>ru</d4p1:lang>
+					<d4p1:content>Анализ источников первичного интереса</d4p1:content>
+				</d4p1:item>
+			</presentation>
+		</settingsVariant>
+	</dataCompositionSchema>
+</SchemaFile>﻿<?xml version="1.0" encoding="UTF-8"?>
+<Settings xmlns="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<selection>
+		<item xsi:type="SelectedItemFolder">
+			<title>Привлеченные клиенты</title>
+			<item xsi:type="SelectedItemField">
+				<field>КоличествоПривлеченныхКлиентов</field>
+			</item>
+			<item xsi:type="SelectedItemField">
+				<field>КоличествоКлиентовСовершившихПокупку</field>
+			</item>
+			<item xsi:type="SelectedItemField">
+				<field>ПроцентСовершившихПокупку</field>
+			</item>
+			<placement>Auto</placement>
+		</item>
+		<item xsi:type="SelectedItemFolder">
+			<title>Затраты</title>
+			<item xsi:type="SelectedItemField">
+				<field>ПлановаяСуммаЗатрат</field>
+			</item>
+			<item xsi:type="SelectedItemField">
+				<field>СтоимостьПривлеченияОдногоКлиента</field>
+			</item>
+			<item xsi:type="SelectedItemField">
+				<field>СтоимостьПривлеченияОдногоКлиентаСовершившегоПокупку</field>
+			</item>
+			<placement>Auto</placement>
+		</item>
+		<item xsi:type="SelectedItemFolder">
+			<title>Продажи</title>
+			<item xsi:type="SelectedItemField">
+				<field>ПлановаяСуммаПродаж</field>
+			</item>
+			<item xsi:type="SelectedItemField">
+				<field>СуммаВыручки</field>
+			</item>
+			<placement>Auto</placement>
+		</item>
+	</selection>
+	<filter>
+		<item xsi:type="FilterItemComparison">
+			<left xsi:type="dcscor:Field">КаналПервичногоИнтереса</left>
+			<comparisonType>Equal</comparisonType>
+			<userSettingID>527fd4ad-c73c-4386-8015-c07a4a81062e</userSettingID>
+		</item>
+		<item xsi:type="FilterItemComparison">
+			<left xsi:type="dcscor:Field">ИсточникПервичногоИнтереса</left>
+			<comparisonType>Equal</comparisonType>
+			<userSettingID>cfc9a5ee-fb0b-418a-b533-f5a2dfee5a3b</userSettingID>
+		</item>
+	</filter>
+	<dataParameters>
+		<dcscor:item xsi:type="SettingsParameterValue">
+			<dcscor:use>false</dcscor:use>
+			<dcscor:parameter>ПериодОтчета</dcscor:parameter>
+			<dcscor:value xsi:type="v8:StandardPeriod">
+				<v8:variant xsi:type="v8:StandardPeriodVariant">Custom</v8:variant>
+				<v8:startDate>0001-01-01T00:00:00</v8:startDate>
+				<v8:endDate>0001-01-01T00:00:00</v8:endDate>
+			</dcscor:value>
+			<userSettingID>d4557396-3eef-4428-bc7e-130eb073c8ef</userSettingID>
+		</dcscor:item>
+	</dataParameters>
+	<conditionalAppearance>
+		<item>
+			<selection>
+				<item>
+					<field>ПлановаяСуммаЗатрат</field>
+				</item>
+				<item>
+					<field>ПлановаяСуммаПродаж</field>
+				</item>
+				<item>
+					<field>СтоимостьПривлеченияОдногоКлиента</field>
+				</item>
+				<item>
+					<field>СтоимостьПривлеченияОдногоКлиентаСовершившегоПокупку</field>
+				</item>
+				<item>
+					<field>СуммаВыручки</field>
+				</item>
+			</selection>
+			<filter/>
+			<appearance>
+				<dcscor:item xsi:type="SettingsParameterValue">
+					<dcscor:parameter>Формат</dcscor:parameter>
+					<dcscor:value xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ЧЦ=15; ЧДЦ=2</v8:content>
+						</v8:item>
+					</dcscor:value>
+				</dcscor:item>
+			</appearance>
+			<presentation xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>НеПереводитьСлужебныйОпределяемыйФорматСуммы</v8:content>
+				</v8:item>
+			</presentation>
+		</item>
+	</conditionalAppearance>
+	<item xsi:type="StructureItemTable">
+		<row>
+			<groupItems>
+				<item xsi:type="GroupItemField">
+					<field>КаналПервичногоИнтереса</field>
+					<groupType>Items</groupType>
+					<periodAdditionType>None</periodAdditionType>
+					<periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</periodAdditionBegin>
+					<periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</periodAdditionEnd>
+				</item>
+			</groupItems>
+			<order>
+				<item xsi:type="OrderItemAuto"/>
+			</order>
+			<selection>
+				<item xsi:type="SelectedItemAuto"/>
+			</selection>
+			<item>
+				<groupItems>
+					<item xsi:type="GroupItemField">
+						<field>ИсточникПервичногоИнтереса</field>
+						<groupType>Items</groupType>
+						<periodAdditionType>None</periodAdditionType>
+						<periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</periodAdditionBegin>
+						<periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</periodAdditionEnd>
+					</item>
+				</groupItems>
+				<order>
+					<item xsi:type="OrderItemAuto"/>
+				</order>
+				<selection>
+					<item xsi:type="SelectedItemAuto"/>
+				</selection>
+			</item>
+		</row>
+		<selection>
+			<item xsi:type="SelectedItemAuto"/>
+		</selection>
+	</item>
+</Settings>﻿<?xml version="1.0" encoding="UTF-8"?>
+<SchemaFile xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<dataCompositionSchema xmlns="http://v8.1c.ru/8.1/data-composition-system/schema"/>
+</SchemaFile>
